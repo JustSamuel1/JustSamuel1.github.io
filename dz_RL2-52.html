@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RL2-52 Homework</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="ДЗ РЛ2-52, Электроника и микропроцессорная техника, МГТУ">
+	<meta name="description" content="Здесь приведено домашнее задание студентов МГТУ им. Баумана, обучающихся на 3 курсе факультита РЛ2 по предмету 'Электроника и микропроцессорная техника'.">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	 <button><a href = "http://www.mntores.inlife.ru/rl1/elmp/"> Домой </a></button>
+	<h1 style="margin-left: 200px;">Домашнее задание №1 по курсу "Электроника и МПТ". РЛ2-52</h1>
+	<p>
+		Составить принципиальную схему цифрового устройства,
+		используя  любые   реальные  элементы  КМОП - логики,
+		таблица истинности которого соответствует  заданной.
+		Минимизацию  функции   произвести  двумя   способами
+		(по правилам  алгебры  логики и методом карт Карно).
+		Оформить задание с соблюдением ГОСТ 2.743-91, ГОСТ 2.104-68.
+	</p>
+	<br>
+	<h1>Домашнее задание N2 по курсу "Электроника и МПТ".</h1>
+	<p>
+		Разработать цифровое устройство на основе любого микропроцессора, выполняющее функцию, минимизированную в домашнем задании №1 (Включая принципиальную схему и управляющую программу в кодах выбранного микропроцессора).
+	</p>
+	<ul class = "tables">
+		<li>
+	<table >
+		<caption>Вариант 1</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		</table>
+	</li>
+
+
+	<li>
+		<table>
+			<caption>Вариант 2</caption>
+			<tr>
+				<th colspan="3">Входные сигналы</th>
+				<th class = "leftB">Выходные</th>
+			</tr>
+			<tr>
+				<th>X1</th>
+				<th>X2</th>
+				<th>X3</th>
+				<th class = "leftB">Y</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+		</table>
+	</li>
+
+	<li>
+	<table >
+		<caption>Вариант 3</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		</table>
+	</li>
+
+	<li>
+		<table>
+			<caption>Вариант 4</caption>
+			<tr>
+				<th colspan="3">Входные сигналы</th>
+				<th class = "leftB">Выходные</th>
+			</tr>
+			<tr>
+				<th>X1</th>
+				<th>X2</th>
+				<th>X3</th>
+				<th class = "leftB">Y</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+		</table>
+	</li>
+
+	<li>
+	<table >
+		<caption>Вариант 5</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		</table>
+	</li>
+
+	<li>
+	<table >
+		<caption>Вариант 6</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		</table>
+	</li>
+	<li>
+	<table >
+		<caption>Вариант 7</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		</table>
+	</li>
+	<li>
+	<table >
+		<caption>Вариант 8</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		</table>
+	</li>
+	<li>
+	<table >
+		<caption>Вариант 9</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		</table>
+	</li>
+	<li>
+	<table >
+		<caption>Вариант 10</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		</table>
+	</li>
+
+	<li>
+	<table >
+		<caption>Вариант 11</caption>
+		<tr>
+			<th colspan="3">Входные сигналы</th>
+			<th class = "leftB">Выходные</th>
+		</tr>
+		<tr>
+			<th>X1</th>
+			<th>X2</th>
+			<th>X3</th>
+			<th class = "leftB">Y</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td class = "leftB">0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td class = "leftB">1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td class = "leftB">1</td>
+		</tr>
+		</table>
+	</li>
+
+
+	<li>
+		<table>
+			<caption>Вариант 12</caption>
+			<tr>
+				<th colspan="3">Входные сигналы</th>
+				<th class = "leftB">Выходные</th>
+			</tr>
+			<tr>
+				<th>X1</th>
+				<th>X2</th>
+				<th>X3</th>
+				<th class = "leftB">Y</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+		</table>
+	</li>
+
+
+	<li>
+		<table>
+			<caption>Вариант 13</caption>
+			<tr>
+				<th colspan="3">Входные сигналы</th>
+				<th class = "leftB">Выходные</th>
+			</tr>
+			<tr>
+				<th>X1</th>
+				<th>X2</th>
+				<th>X3</th>
+				<th class = "leftB">Y</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+		</table>
+	</li>
+
+
+	<li>
+		<table>
+			<caption>Вариант 14</caption>
+			<tr>
+				<th colspan="3">Входные сигналы</th>
+				<th class = "leftB">Выходные</th>
+			</tr>
+			<tr>
+				<th>X1</th>
+				<th>X2</th>
+				<th>X3</th>
+				<th class = "leftB">Y</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+		</table>
+	</li>
+
+
+	<li>
+		<table>
+			<caption>Вариант 15</caption>
+			<tr>
+				<th colspan="3">Входные сигналы</th>
+				<th class = "leftB">Выходные</th>
+			</tr>
+			<tr>
+				<th>X1</th>
+				<th>X2</th>
+				<th>X3</th>
+				<th class = "leftB">Y</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+		</table>
+	</li>
+
+
+	<li>
+		<table>
+			<caption>Вариант 16</caption>
+			<tr>
+				<th colspan="3">Входные сигналы</th>
+				<th class = "leftB">Выходные</th>
+			</tr>
+			<tr>
+				<th>X1</th>
+				<th>X2</th>
+				<th>X3</th>
+				<th class = "leftB">Y</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td class = "leftB">1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td class = "leftB">0</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td class = "leftB">0</td>
+			</tr>
+		</table>
+	</li>
+</ul>
+</body>
+</html>
